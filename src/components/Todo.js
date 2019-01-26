@@ -5,7 +5,12 @@ const todo = props => {
 
   return (
     <React.Fragment>
-      <input type='text' placeholder='Todo' />
+      <input
+        type='text'
+        placeholder='Todo'
+        value={todo}
+        onChange={e => setTodo(e.value)}
+      />
       <button type='button'>Add</button>
       <ul />
     </React.Fragment>
